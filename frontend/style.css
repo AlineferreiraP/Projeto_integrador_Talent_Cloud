@@ -1,0 +1,160 @@
+/* 
+RESET
+*/
+
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+img,
+ol,
+ul,
+li,
+fieldset,
+form,
+label {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+/* ----- General Styling ----- */
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container,
+#latest_works,
+#bottom_content,
+#download {
+  margin: auto;
+  width: 1000px;
+}
+
+.bold_text {
+  font-weight: bold;
+}
+
+.blue_text {
+  color: #2aacc8;
+  font-size: 15px;
+}
+
+/* ----- General Styling ----- */
+
+/* ----- Header Styling ----- */
+
+#header {
+  background: #e8ebf1;
+  height: 120px;
+}
+
+h1 {
+  float: left;
+  margin-top: 37px;
+}
+/* 
+h1 a {
+  background: url(/frontend/img/Logo_tipo.png) no-repeat;
+  display: block;
+  height: 500px;
+  text-indent: -9999px;
+  width: 200px;
+} */
+
+a img {
+  width: 180px;
+  height: 180px;
+}
+/* ----- Header Styling ----- */
+
+/* ----- Main Navigation Styling ----- */
+
+#main_menu {
+  float: right;
+  margin-top: 54px;
+}
+
+.first_list {
+  float: left;
+  margin: 0 14px;
+}
+
+.main_menu_first {
+  color: #000;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 8px 8px;
+  text-transform: uppercase;
+}
+
+.main_menu_first:hover {
+  border-top: 5px solid #2aacc8;
+}
+
+.with_dropdown {
+  position: relative;
+}
+
+.with_dropdown li a {
+  display: block;
+}
+
+.with_dropdown ul {
+  background: #fff;
+  border-bottom: 5px solid #2aacc8;
+  padding: 12px 0;
+  position: absolute;
+  top: 24px;
+  visibility: hidden;
+  width: 197px;
+}
+
+.first_list:hover.first_list ul {
+  visibility: visible;
+}
+
+.second_list {
+  margin: 0 5px;
+  padding: 10px;
+}
+
+.second_list_border {
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.main_menu_second {
+  color: #000;
+  font-size: 13px;
+  text-transform: capitalize;
+}
+
+.main_menu_second:hover {
+  color: #2aacc8;
+}
+
+.main_current {
+  border-top: 5px solid #2aacc8;
+}

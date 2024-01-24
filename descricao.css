@@ -1,0 +1,19 @@
+#logo{
+    width: 10rem;
+}
+#freira{
+    width: 25rem;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction:row;
+    margin: 5rem;
+    
+
+
+}

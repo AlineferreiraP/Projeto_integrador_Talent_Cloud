@@ -1,0 +1,53 @@
+@import url('');
+*{
+    color: rgb(60, 236, 60);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style:unset;
+}
+
+#logo{
+    width: 8rem;
+    border-radius: 8px;
+}
+#freira{
+    width: 25rem;
+    height: 35rem;
+    
+    border-radius: 8px;
+    
+}
+.flex-container{
+    display: flex;
+    flex-direction: row;
+
+}
+.flex-item2{
+  background-color: black;
+  margin-left: 0.5rem;
+  margin-bottom: 10.7rem;
+  
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    
+}
+nav{
+    background-color: rgb(45, 228, 29);
+    padding-left: 38rem;
+    padding-right: 25rem;
+    border-radius: 8px;
+    margin-bottom: 8px;
+
+}
+li , a {
+    color: black;
+    font-size: x-large;
+
+}
+
+    
+
+
+
+

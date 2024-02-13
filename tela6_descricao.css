@@ -1,9 +1,14 @@
-@import url('');
+
 *{
-    color: rgb(60, 236, 60);
+    color: rgb(56, 218, 56);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-style:unset;
+    
 }
+html{
+  background-color: black;
+}
+ 
 
 #logo{
     width: 8rem;
@@ -14,17 +19,34 @@
     height: 35rem;
     
     border-radius: 8px;
+    transition: all 0.5s;
+    cursor: pointer;
+    }
+    h1{
+        text-align: center;
+    }
     
-}
+    #freira:hover{
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+    
+
 .flex-container{
     display: flex;
-    flex-direction: row;
+     width: 800px;
+     margin: 0 auto;
+     
+    
+    
 
 }
 .flex-item2{
-  background-color: black;
-  margin-left: 0.5rem;
-  margin-bottom: 10.7rem;
+  background-color: rgb(70, 223, 40);
+  padding: 2rem;
+  border-radius: 8px;
+  margin: 5px;
+  height: 31rem;
   
 }
 header{
@@ -32,22 +54,103 @@ header{
     justify-content: space-between;
     
 }
-nav{
-    background-color: rgb(45, 228, 29);
-    padding-left: 38rem;
-    padding-right: 25rem;
-    border-radius: 8px;
-    margin-bottom: 8px;
 
+nav li, a {
+   display: inline;
+   color: black;
+   padding: 2rem;
+   
 }
-li , a {
-    color: black;
-    font-size: x-large;
-
-}
+   
 
     
+nav{
+    display: flex;
+    background-color: rgb(32, 235, 32);
+    padding-left: 30rem;
+    height: 70px;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+    
+.estrelas input[type=radio] {
+    display: none;
+  }
+  .estrelas label i.fa:before {
+    content:'\f004';
+    color: rgb(255, 17, 0);
+  }
+  .estrelas input[type=radio]:checked ~ label i.fa:before {
+    color: #90e65e;
+  }
+  .estrelas{
+    border-radius: 8px;
+    transition: all 1.5s;
+    cursor: pointer;
+  }
+  .estrelas :hover{
+    -webkit-transform: scale(2.5);
+    transform: scale(2.5);
+  }
 
 
-
-
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .pic-ctn {
+    width: 100vw;
+    height: 200px;
+  }
+  
+  @keyframes display {
+    0% {
+      transform: translateX(200px);
+      opacity: 0;
+    }
+    10% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    20% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    30% {
+      transform: translateX(-200px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(-200px);
+      opacity: 0;
+    }
+  }
+  
+  .pic-ctn {
+    position: relative;
+    width: 100vw;
+    height: 300px;
+    margin-top: 15vh;
+  }
+  
+  .pic-ctn > img {
+    position: absolute;
+    top: 0;
+    left: calc(50% - 100px);
+    opacity: 0;
+    animation: display 10s infinite;
+  }
+  
+  img:nth-child(2) {
+    animation-delay: 2s;
+  }
+  img:nth-child(3) {
+    animation-delay: 4s;
+  }
+  img:nth-child(4) {
+    animation-delay: 6s;
+  }
+  img:nth-child(5) {
+    animation-delay: 8s;
+  }

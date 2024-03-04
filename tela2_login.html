@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Link css -->
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Login</title>
+  </head>
+
+  <body>
+    <!-- header-->
+    <header stylr="background-image: url('img/conexão cultura background.png')">
+      <!-- container-->
+      <div class="container">
+        <nav>
+          <a href="index.html">
+            <img src="img/logo_atual.jpg" alt="Logo" width="200 height=200" />
+          </a>
+          <div class="box-busca">
+            <div class="search-box">
+              <form method="post" action="#">
+                <input
+                  type="text"
+                  class="search-box-input"
+                  name="busca"
+                  placeholder="Faça sua Pesquisa"
+                />
+                <button class="search-box-button">
+                  <i class="search-box-icone icon icon-search"></i>
+                </button>
+              </form>
+            </div>
+            <!-- Search -->
+          </div>
+          <!--Box Busca-->
+
+          <ul class="ul">
+            <a href="index.html">Home</a>
+            <a href="">Minha lista</a>
+            <a class="btn" href="tela2_login.html">Entrar</a>
+            <a class="btn" href="tela3_cadastro.html">Cadastrar</a>
+          </ul>
+        </nav>
+      </div>
+      <!-- end container -->
+      <!-- faca mais -->
+    </header>
+    <!-- end header-->
+    <!-- login -->
+    <section class="depoimentos">
+      <div class="cards">
+        <div class="card-item">
+          <h1>Login</h1>
+          <div class="tela-login">
+            <input class="input" type="text" placeholder="e-mail" />
+            <br /><br />
+            <input class="input" type="password" placeholder="senha" />
+            <br /><br />
+            <button class="btn">Enviar</button>
+          </div>
+        </div>
+        <div class="card-item">
+          <h1>Conecte com sua rede social</h1>
+          <div class="tela-redes">
+            <button
+              type="button-destaque"
+              class="button-destaque"
+              onclick="window.location.href='https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fmyaccount.google.com%3Futm_source%3Daccount-marketing-page%26utm_medium%3Dgo-to-account-button&ifkv=ATuJsjzGIK1Ip5KLsnveXNBZfVotFwM0p0vzL3GViGMNMXz7719dFI6dxMbeMpVtq4UBm2NJTLnOFg&service=accountsettings&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S571026940%3A1709510795654747&theme=glif'"
+            >
+              <img src="img/google.png" alt="google" />
+            </button>
+
+            <button
+              type="button-destaque"
+              class="button-destaque"
+              onclick="window.location.href='https://www.instagram.com/accounts/login/'"
+            >
+              <img src="img/instagran.jpg" alt="google" />
+            </button>
+
+            <ul class="ul">
+              <a class="btn" href="tela2_login.html">Cadastrar</a>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br />
+
+    <!-- login -->
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="links">
+          <a href="#"> <i class="fa fa-facebook" aria-hidden="true"></i></a>
+          <a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
+          <a href="#"> <i class="fa fa-github" aria-hidden="true"></i></a>
+          <a href="#"> <i class="fa fa-linkedin" aria-hidden="true"></i></a>
+        </div>
+        <p>DESENVOLVIDO TURMA 14 [GRUPO 1]</p>
+        <p>Aline Ferreira - Douglas Ferreira - Jane Ceilan - Pâmella Torres</p>
+        <p>2024</p>
+      </div>
+    </footer>
+    <!-- end footer -->
+    <!-- <script src="js/main.js"></script> -->
+  </body>
+</html>

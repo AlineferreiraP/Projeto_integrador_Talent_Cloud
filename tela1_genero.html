@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Link css -->
+    <link rel="stylesheet" href="tela1_genero.css">
+    <script src="script.js" defer></script>
+    <title>Conexão Cultura</title>
+</head>
+<body>
+     <!-- header-->
+    <header stylr="background-image: url('img/conexão cultura background.png')">
+        <!-- container-->
+       <div class="container">
+          <nav>
+            <a href="index.html">
+                <img src="img/logo_atual.jpg" alt="Logo" width="200 height=200">
+            </a>
+            <div class="box-busca">
+                <div class="search-box">
+        
+                    <form method="post" action="#">
+                        <input type="text" class="search-box-input" name="busca" placeholder="Faça sua Pesquisa">
+                        <button class="search-box-button"><i class="search-box-icone icon icon-search"></i></button>
+        
+                    </form>
+        
+                </div><!-- Search -->
+        
+            </div><!--Box Busca-->
+        
+            <ul class="ul">
+                <a href="index.html">Home</a>
+                <a href="tela5_pesquisa_filtrada.html">Minha lista</a>
+                <a class="btn" href="tela2_login.html">Entrar</a>
+                <a class="btn" href="tela3_cadastro.html">Cadastrar</a>
+                              
+            </ul>
+            
+          </nav>
+          <section class="banner">
+            <div class="banner-text">
+                <h1>Conexão Cultura</h1>
+                <p>Encontre tudo que precisa em um só site!</p>
+                <a href="cadastre-se.html" class="btn">Cadastre-se</a>
+            </div>
+          </section>
+       </div>
+       <!-- end container -->
+       <!-- faca mais -->
+    </header>
+    <!-- end header-->
+        <!-- container generos-->
+        <div class="destaques">
+            <div class="container">
+                <h3>Pesquisa por gênero</h3>
+                <p> Segue a sessão conforme o gênero! Acesse as opções na lista.
+                </p>
+                <section class="depoimentos">
+                    <div class="container">
+                        <div class="cards">
+                            <!-- card Genero romance-->
+                            <div class="card-item">
+                                <p class="nome-user">Romance</p>
+                                    <div id="menu" class="menu" data-aberto="false">
+                                        <span id="menu-trigger" class="menu-trigger">
+                                            <i class="fa fa-plus"></i>
+                                            <i class="fa fa-minus"></i>
+                                        </span>
+                                        
+                                        <ul class="menu-menu">
+                                            <li><a href='#'>Filmes</a></li>
+                                            <li><a href='#'>Séries</a></li>
+                                            <li><a href='#'>Livros</a></li>
+                                        </ul>
+                                    </div>
+                            </div>
+                            <!-- card Genero Ação-->
+                            <div class="card-item">
+                                <p class="nome-user">Ação</p>
+                                <div id="menu1" class="menu" data-aberto="false">
+                                    <span id="menu1-trigger" class="menu-trigger">
+                                        <i class="fa fa-plus"></i>
+                                        <i class="fa fa-minus"></i>
+                                    </span>
+                                    <ul class="menu-menu">
+                                        <li><a href='#'>Filmes</a></li>
+                                        <li><a href='#'>Séries</a></li>
+                                        <li><a href='#'>Livros</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- card Genero Drama-->
+                            <div class="card-item">
+                                <p class="nome-user">Drama</p>
+                                <div id="menu2" class="menu" data-aberto="false">
+                                    <span id="menu2-trigger" class="menu-trigger">
+                                        <i class="fa fa-plus"></i>
+                                        <i class="fa fa-minus"></i>
+                                    </span>
+                                    <ul class="menu-menu">
+                                        <li><a href='#'>Filmes</a></li>
+                                        <li><a href='#'>Séries</a></li>
+                                        <li><a href='#'>Livros</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- card Genero Ficção-->
+                            <div class="card-item">
+                                <p class="nome-user">Ficção</p>
+                                <div id="menu3" class="menu" data-aberto="false">
+                                    <span id="menu3-trigger" class="menu-trigger">
+                                        <i class="fa fa-plus"></i>
+                                        <i class="fa fa-minus"></i>
+                                    </span>
+                                    <ul class="menu-menu">
+                                        <li><a href='#'>Filmes</a></li>
+                                        <li><a href='#'>Séries</a></li>
+                                        <li><a href='#'>Livros</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+     <!-- end container generos --> 
+    <!-- destaques -->
+    <section class="destaques">
+        <div class="container">
+            <h3>Destaques do mês</h3>
+            <p>Veja os mais clicados da semana em todos site !</p>
+            <div class="cards">
+                <!-- card item 1-->
+                <div class="card-item">
+                    <p class="nome-user">Livros</p>
+                    <button type="button-destaque" class="button-destaque"
+                    onclick="window.location.href='https://www.amazon.com.br/Caf%C3%A9-com-Deus-Pai-2024/dp/6598078806/?_encoding=UTF8&pd_rd_w=NuFlu&content-id=amzn1.sym.397cc482-05b4-430b-a2c2-a11f9ef2629d%3Aamzn1.symc.d10b1e54-47e4-4b2a-b42d-92fe6ebbe579&pf_rd_p=397cc482-05b4-430b-a2c2-a11f9ef2629d&pf_rd_r=CXC45T203GKRQA1D8TP4&pd_rd_wg=NR2ub&pd_rd_r=342f95b2-04c0-4004-a95b-ba0d19f96f12&ref_=pd_gw_ci_mcx_mr_hp_atf_m'">
+                        <img src="./img/amazon.jpg" alt="amazon">
+                    </button>
+                    <br>
+                    <br>
+                    <button type="button-destaque" class="button-destaque"
+                        onclick="window.location.href='https://www.amazon.com.br/defeito-cor-Ana-Maria-Gon%C3%A7alves/dp/8501071757/?_encoding=UTF8&pd_rd_w=NuFlu&content-id=amzn1.sym.397cc482-05b4-430b-a2c2-a11f9ef2629d%3Aamzn1.symc.d10b1e54-47e4-4b2a-b42d-92fe6ebbe579&pf_rd_p=397cc482-05b4-430b-a2c2-a11f9ef2629d&pf_rd_r=CXC45T203GKRQA1D8TP4&pd_rd_wg=NR2ub&pd_rd_r=342f95b2-04c0-4004-a95b-ba0d19f96f12&ref_=pd_gw_ci_mcx_mr_hp_atf_m'">
+                        <img src="img/amazon1.jpg" alt="amazon1">
+                    </button>
+                                        
+                </div>
+                <div class="card-item">
+                    <p class="nome-user">Séries</p>
+                    <button type="button-destaque" class="button-destaque"
+                        onclick="window.location.href='https://www.netflix.com/watch/80988881?trackId=14170035'">
+                        <img src="./img/netflix-serie.jpg" alt="serie">
+                    </button>
+                    <br>
+                    <br>
+                    <button type="button-destaque" class="button-destaque"
+                        onclick="window.location.href='https://play.max.com/show/0666f06b-6d69-4e7c-aefa-9b03892d8f9b'">
+                        <img src="./img/netflix-serie2.jpg" alt="serie1">
+                    </button>
+                </div>
+                <div class="card-item">
+                    <p class="nome-user">Filmes</p>
+                    <button type="button-destaque" class="button-destaque"
+                        onclick="window.location.href='tela6_descricao.html'">
+                        <img src="img/a-freira-poster-teaser.png" alt="filme">
+                    </button>
+                    <br>
+                    <br>
+                    <button type="button-destaque" class="button-destaque"
+                        onclick="window.location.href='https://www.netflix.com/watch/81616617?trackId=255824129&tctx=0%2C0%2Ca2ba17b8-065f-4943-9234-7f523de1d440-55179%2Ca2ba17b8-065f-4943-9234-7f523de1d440-55179%7C2%2Cunknown%2C%2C%2CtitlesResults%2C81616617%2CVideo%3A81616617%2CminiDpPlayButton'">
+                        <img src="./img/netflix1.jpg" alt="filme1">
+                    </button>
+                    
+                </div>
+        </div>
+    </section>
+    <!-- end destaques -->
+    <!-- depoimentos -->
+    <section class="depoimentos">
+        <div class="container">
+            <h3>Nossos depoimentos</h3>
+            <p>Leia o que o pessoal achou de nosso site!</p>
+            <div class="cards">
+                <!-- card item 1-->
+                <div class="card-item">
+                    <img src="img/1098399_a-entidade-ii-dvd-filme-terror-ms_m1_637383540862573125.jpg" alt="matheus">
+                    <p class="nome-user">Douglas</p>
+                    <p class="depoimentos-user">
+                        Adorei, site prático e fácil manuseio. 
+                    </p>
+                    <div class="estrelas">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <!-- edn card item 1-->
+                <!-- card item 2-->
+                <div class="card-item">
+                    <img src="img/1098399_a-entidade-ii-dvd-filme-terror-ms_m1_637383540862573125.jpg" alt="matheus">
+                    <p class="nome-user">Aline</p>
+                    <p class="depoimentos-user">
+                        Adorei, site prático e fácil manuseio. 
+                    </p>
+                    <div class="estrelas">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <!-- edn card item 2-->
+                <!-- card item 3-->
+                <div class="card-item">
+                    <img src="img/1098399_a-entidade-ii-dvd-filme-terror-ms_m1_637383540862573125.jpg" alt="matheus">
+                    <p class="nome-user">Jey</p>
+                    <p class="depoimentos-user">
+                        Adorei, site prático e fácil manuseio. 
+                    </p>
+                    <div class="estrelas">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <!-- edn card item 3-->
+            </div>
+        </div>
+    </section>
+    <!-- end depoimentos --> 
+    </section>
+    <!-- footer -->
+      <footer class="footer">
+        <div class="container">
+          <div class="links">
+            <a href="#"> <i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="#"> <i class="fa fa-github" aria-hidden="true"></i></a>
+            <a href="#"> <i class="fa fa-linkedin" aria-hidden="true"></i></a>
+          </div>
+          <p>DESENVOLVIDO TURMA 14 [GRUPO 1] </p> 
+          <p> Aline Ferreira - Douglas Ferreira - Jane Ceilan - Pâmella Torres </p>
+          <p> 2024 </p>
+
+        </div>
+      </footer>
+    <!-- end footer -->
+    <!-- <script src="js/main.js"></script> -->
+</body>
+</html>

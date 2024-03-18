@@ -6,55 +6,73 @@
     <!-- Font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Link css -->
-    <link rel="stylesheet" href="tela1_genero.css">
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="tela1_genero1.css">
+    <link rel="stylesheet" href="footer-header.css">
+    <script src="tela1_script.js" defer></script>
     <title>Conexão Cultura</title>
+
 </head>
 <body>
-     <!-- header-->
+    <!-- header-->
     <header stylr="background-image: url('img/conexão cultura background.png')">
-        <!-- container-->
-       <div class="container">
-          <nav>
-            <a href="index.html">
-                <img src="img/logo_atual.jpg" alt="Logo" width="200 height=200">
-            </a>
-            <div class="box-busca">
-                <div class="search-box">
-        
-                    <form method="post" action="#">
-                        <input type="text" class="search-box-input" name="busca" placeholder="Faça sua Pesquisa">
-                        <button class="search-box-button"><i class="search-box-icone icon icon-search"></i></button>
-        
-                    </form>
-        
-                </div><!-- Search -->
-        
-            </div><!--Box Busca-->
-        
-            <ul class="ul">
-                <a href="index.html">Home</a>
-                <a href="tela5_pesquisa_filtrada.html">Minha lista</a>
-                <a class="btn" href="tela2_login.html">Entrar</a>
-                <a class="btn" href="tela3_cadastro.html">Cadastrar</a>
-                              
-            </ul>
-            
-          </nav>
-          <section class="banner">
-            <div class="banner-text">
-                <h1>Conexão Cultura</h1>
-                <p>Encontre tudo que precisa em um só site!</p>
-                <a href="cadastre-se.html" class="btn">Cadastre-se</a>
+      <!-- container-->
+      <div class="container">
+        <nav>
+          <a href="tela1_genero.html">
+            <img src="img/logo_atual.jpg" alt="Logo" width="200 height=200" />
+          </a>
+          <div class="box-busca">
+            <div class="search-box">
+              <form method="post" action="#">
+                <div class="icone lupa"></div>
+                <input
+                  type="text"
+                  class="search-box-input"
+                  name="busca"
+                  placeholder="Faça sua Pesquisa"
+                />
+                <button class="search-box-button">
+                  <i class="search-box-icone icon icon-search"></i>
+                </button>
+              </form>
             </div>
-          </section>
-       </div>
-       <!-- end container -->
-       <!-- faca mais -->
+            <!-- Search -->
+          </div>
+          <!--Box Busca-->
+
+          <ul class="ul">
+            <a href="tela1_genero.html" target="_blank">Home</a>
+            <a href="tela5_pesquisa_filtrada.html" target="_blank"
+              >Minha lista</a
+            >
+            <a class="btn" href="tela2_login.html" target="_blank">Entrar</a>
+            <a class="btn" href="tela3_cadastro.html" target="_blank"
+              >Cadastrar</a
+            >
+
+            <div class="close-icon" onclick="closeMenu()">
+              <i class="fa fa-times-circle" aria-hidden="true"></i>
+            </div>
+          </ul>
+          <div class="menu-icon" onclick="openMenu()">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+          </div>
+        </nav>
+      </div>
+      <!-- end container -->
+      <!-- faca mais -->
     </header>
+    <section class="banner">
+            <div class="banner-text">
+                <h1>Conexão <br> Cultura</h1>
+                <p>Encontre tudo que precisa em um só site!</p>
+                <a href="tela3_cadastro.html" target="_blank" class="btn">Cadastre-se</a>
+            </div>
+    </section>
+
     <!-- end header-->
-        <!-- container generos-->
-        <div class="destaques">
+    <!-- container generos-->
+    <div class="destaques">
             <div class="container">
                 <h3>Pesquisa por gênero</h3>
                 <p> Segue a sessão conforme o gênero! Acesse as opções na lista.
@@ -72,9 +90,9 @@
                                         </span>
                                         
                                         <ul class="menu-menu">
-                                            <li><a href='#'>Filmes</a></li>
-                                            <li><a href='#'>Séries</a></li>
-                                            <li><a href='#'>Livros</a></li>
+                                            <li><a href='tela5_pesquisa_filtrada.html'>Filmes </a></li>
+                                            <li><a href='tela5_pesquisa_filtrada.html'>Séries</a></li>
+                                            <li><a href='tela5_pesquisa_filtrada.html'>Livros</a></li>
                                         </ul>
                                     </div>
                             </div>
@@ -127,7 +145,7 @@
                     </div>
                 </section>
             </div>
-        </div>
+    </div>
      <!-- end container generos --> 
     <!-- destaques -->
     <section class="destaques">
@@ -235,22 +253,26 @@
         </div>
     </section>
     <!-- end depoimentos --> 
-    </section>
-    <!-- footer -->
-      <footer class="footer">
-        <div class="container">
+   <!-- footer -->
+    <footer class="footer">
+            <div class="container">
           <div class="links">
-            <a href="#"> <i class="fa fa-facebook" aria-hidden="true"></i></a>
-            <a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
-            <a href="#"> <i class="fa fa-github" aria-hidden="true"></i></a>
-            <a href="#"> <i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+            <a href="#">
+              <i class="fa-brands fa-github" aria-hidden="true"></i
+            ></a>
+            <a href="#">
+              <i class="fa-brands fa-linkedin" aria-hidden="true"></i
+            ></a>
           </div>
-          <p>DESENVOLVIDO TURMA 14 [GRUPO 1] </p> 
-          <p> Aline Ferreira - Douglas Ferreira - Jane Ceilan - Pâmella Torres </p>
-          <p> 2024 </p>
-
-        </div>
-      </footer>
+          <p>DESENVOLVIDO TURMA 14 [GRUPO 1]</p>
+          <p>
+            Aline Ferreira - Jane Ceilan - Pâmella Torres
+          </p>
+          <p>2024</p>
+            </div>
+    </footer>
     <!-- end footer -->
     <!-- <script src="js/main.js"></script> -->
 </body>

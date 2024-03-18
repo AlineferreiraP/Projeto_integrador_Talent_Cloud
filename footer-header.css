@@ -1,0 +1,52 @@
+header {
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+
+/*LUPA*/
+.icone.lupa {
+    width: 45px;
+    height: 45px;
+    border: 5px solid rgb(54, 238, 30);
+    border-radius: 50%;
+    position: relative;
+
+}
+
+.icone.lupa:after {
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    background-color: rgb(54, 238, 30);
+    display: block;
+    content: "";
+    top: 20%;
+    left: 30%;
+
+    transform: rotate(45deg);
+    transform-origin: -10px 40px;
+
+}
+
+/* footer*/
+.footer {
+    background-color: forestgreen;
+    text-align: center;
+}
+
+.footer i {
+    color: antiquewhite;
+    font-size: 19px;
+    background-color: black;
+    padding: 10px;
+    margin: 3px;
+    border-radius: 10px;
+}
+
+.footer p {
+    margin-top: 10px;
+    color: antiquewhite;
+}

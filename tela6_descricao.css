@@ -245,7 +245,7 @@ h4{
   font-size: x-large;
   color: rgb(10, 10, 10);
 }
- p {
+.flex-item2 p {
   color: black !important;
   font-size: large;
 }

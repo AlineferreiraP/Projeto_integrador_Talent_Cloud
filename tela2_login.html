@@ -12,7 +12,8 @@
       referrerpolicy="no-referrer"
     />
     <!-- Link css -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="tela1_genero1.css" />
+    <link rel="stylesheet" href="footer-header.css" />
     <script src="script.js" defer></script>
     <title>Login</title>
   </head>
@@ -23,12 +24,13 @@
       <!-- container-->
       <div class="container">
         <nav>
-          <a href="index.html">
+          <a href="tela1_genero.html" target="_blank">
             <img src="img/logo_atual.jpg" alt="Logo" width="200 height=200" />
           </a>
           <div class="box-busca">
             <div class="search-box">
               <form method="post" action="#">
+                <div class="icone lupa"></div>
                 <input
                   type="text"
                   class="search-box-input"
@@ -45,13 +47,25 @@
           <!--Box Busca-->
 
           <ul class="ul">
-            <a href="index.html">Home</a>
-            <a href="">Minha lista</a>
-            <a class="btn" href="tela2_login.html">Entrar</a>
-            <a class="btn" href="tela3_cadastro.html">Cadastrar</a>
+            <a href="tela1_genero.html" target="_blank">Home</a>
+            <a href="tela5_pesquisa_filtrada.html" target="_blank"
+              >Minha lista</a
+            >
+            <a class="btn" href="tela2_login.html" target="_blank">Entrar</a>
+            <a class="btn" href="tela3_cadastro.html" target="_blank"
+              >Cadastrar</a
+            >
+
+            <div class="close-icon" onclick="closeMenu()">
+              <i class="fa fa-times-circle" aria-hidden="true"></i>
+            </div>
           </ul>
+          <div class="menu-icon" onclick="openMenu()">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+          </div>
         </nav>
       </div>
+
       <!-- end container -->
       <!-- faca mais -->
     </header>
@@ -95,21 +109,21 @@
         </div>
       </div>
     </section>
-    <br />
-
-    <!-- login -->
-
     <!-- footer -->
     <footer class="footer">
       <div class="container">
         <div class="links">
-          <a href="#"> <i class="fa fa-facebook" aria-hidden="true"></i></a>
-          <a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
-          <a href="#"> <i class="fa fa-github" aria-hidden="true"></i></a>
-          <a href="#"> <i class="fa fa-linkedin" aria-hidden="true"></i></a>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+          <a href="#">
+            <i class="fa-brands fa-github" aria-hidden="true"></i
+          ></a>
+          <a href="#">
+            <i class="fa-brands fa-linkedin" aria-hidden="true"></i
+          ></a>
         </div>
         <p>DESENVOLVIDO TURMA 14 [GRUPO 1]</p>
-        <p>Aline Ferreira - Douglas Ferreira - Jane Ceilan - Pâmella Torres</p>
+        <p>Aline Ferreira - Jane Ceilan - Pâmella Torres</p>
         <p>2024</p>
       </div>
     </footer>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,17 +14,18 @@
     <!-- Link css -->
     <link rel="stylesheet" href="tela1_genero1.css" />
     <link rel="stylesheet" href="footer-header.css" />
-    <script src="script.js" defer></script>
-    <title>Login</title>
-  </head>
+    <link rel="stylesheet" href="tela3.css" />
+    <script src="tela3.js" defer></script>
 
+    <title>Cadastro</title>
+  </head>
   <body>
     <!-- header-->
     <header stylr="background-image: url('img/conexão cultura background.png')">
       <!-- container-->
       <div class="container">
         <nav>
-          <a href="tela1_genero.html" target="_blank">
+          <a href="tela1_genero.html">
             <img src="img/logo_atual.jpg" alt="Logo" width="200 height=200" />
           </a>
           <div class="box-busca">
@@ -61,49 +62,50 @@
           </div>
         </nav>
       </div>
-
       <!-- end container -->
       <!-- faca mais -->
     </header>
-    <!-- end header-->
-    <!-- login -->
-    <section class="depoimentos">
-      <div class="cards">
-        <div class="card-item">
-          <h1>Login</h1>
-          <div class="tela-login">
-            <input class="input" type="text" placeholder="e-mail" />
-            <br /><br />
-            <input class="input" type="password" placeholder="senha" />
-            <br /><br />
-            <button class="btn">Enviar</button>
-          </div>
-        </div>
-        <div class="card-item">
-          <h1>Conecte com sua rede social</h1>
-          <div class="tela-redes">
-            <button
-              onclick="window.location.href='https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fmyaccount.google.com%3Futm_source%3Daccount-marketing-page%26utm_medium%3Dgo-to-account-button&ifkv=ATuJsjzGIK1Ip5KLsnveXNBZfVotFwM0p0vzL3GViGMNMXz7719dFI6dxMbeMpVtq4UBm2NJTLnOFg&service=accountsettings&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S571026940%3A1709510795654747&theme=glif'"
-              class="image-button"
-            >
-              <img src="img/google.png" alt="google" />
-            </button>
+    <div>
+      <form action="" id="cadastro">
+        <h2>Formulário de cadastro</h2>
+        <label for="username">Nome do Usuário</label>
+        <input type="text" id="username" name="username" />
+        <p id="username-helper" class="helper-text">Use minimo 4 letras</p>
 
-            <button
-              onclick="window.location.href='https://www.instagram.com/accounts/login/'"
-              class="image-button"
-            >
-              <img src="img/instagran.jpg" alt="google" />
-            </button>
+        <label for="email">E-mail de Login</label>
+        <input type="email" id="email" name="email" />
+        <p id="email-helper" class="helper-text">Coloque @ e .com</p>
 
-            <ul class="ul">
-              <a class="btn" href="tela3.html">Cadastrar</a>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- footer -->
+        <label for="idade">Idade</label>
+        <input type="number" id="idade" name="idade" />
+
+        <label for="senha"> Senha:</label>
+        <input type="password" id="senha" name="senha" />
+        <p id="senha-helper" class="helper-text">
+          senha de no máximo 6 caracteres
+        </p>
+
+        <label for="confirma-senha">Confirmar senha:</label>
+        <input type="password" id="confirma-senha" name="confirma-senha" />
+
+        <label for="feminino">
+          Gênero: <br />
+          <br />
+          Feminino</label
+        >
+        <input type="radio" id="feminino" name="genero" />
+
+        <label for="menu-icon"> Masculino </label>
+        <input type="radio" id="masculino" name="genero" />
+
+        <label for="outro"> Outro </label>
+        <input type="radio" id="outro" name="genero" />
+
+        <button type="submit">Enviar</button>
+      </form>
+      <br />
+      <br />
+    </div>
     <footer class="footer">
       <div class="container">
         <div class="links">
@@ -122,6 +124,5 @@
       </div>
     </footer>
     <!-- end footer -->
-    <!-- <script src="js/main.js"></script> -->
   </body>
 </html>

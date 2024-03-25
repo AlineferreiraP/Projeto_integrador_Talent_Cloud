@@ -170,6 +170,7 @@ nav .close-icon{
 .cards {
     display: flex;
     justify-content: center;
+    
 }
 
 .destaques-telas .card-item-telas {
@@ -255,6 +256,7 @@ nav .close-icon{
 }
 
 .destaques .card-item {
+    display: flex;
     background-color: rgb(7, 77, 7);
     margin: 15px;
     border-radius: 14px;
@@ -262,12 +264,25 @@ nav .close-icon{
     width: 350px;
     transition: 0.3s;
     padding-bottom: 15px;
+    flex-direction: row;
+}
+
+.card-item {
+        display: flex;
+        background-color: rgb(7, 77, 7);
+        margin: 15px;
+        border-radius: 14px;
+        text-align: center;
+        width: 350px;
+        transition: 0.3s;
+        padding-bottom: 15px;
+        flex-direction: row;
     
 }
 .destaques .button-destaque {
     background-color:rgb(7, 77, 7);
     border-radius: 10%;
-    }
+        }
 
 .destaques .card-item img {
     border-radius: 10%;
@@ -560,4 +575,31 @@ nav .close-icon{
 .footer p {
     margin-top: 10px;
     color: antiquewhite;
+}
+
+
+/* Estilo dos links ao passar o mouse sobre eles */
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Mostra o dropdown quando o botão é clicado */
+.show {
+    display: block;
+}
+
+.image-button {
+    border: none;
+    /* Remove a borda padrão */
+    background-color: transparent;
+    /* Define o fundo como transparente */
+    padding: 0;
+    /* Remove o preenchimento interno do botão */
+}
+
+.image-button img {
+    display: block;
+    /* Para remover espaços indesejados ao redor da imagem */
+    width: 100%;
+    /* Para garantir que a imagem preencha todo o espaço do botão */
 }

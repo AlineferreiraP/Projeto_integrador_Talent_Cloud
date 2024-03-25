@@ -8,7 +8,10 @@
     <!-- Link css -->
     <link rel="stylesheet" href="tela1_genero1.css">
     <link rel="stylesheet" href="footer-header.css">
-    <script src="tela1_script.js" defer></script>
+    <link rel="stylesheet" href="teste.css">
+    <script src="teste.js" defer></script>
+    
+    
     <title>Conexão Cultura</title>
 
 </head>
@@ -42,11 +45,11 @@
 
           <ul class="ul">
             <a href="tela1_genero.html" target="_blank">Home</a>
-            <a href="tela5_pesquisa_filtrada.html" target="_blank"
+            <a href="tela_4_minhalista.html" target="_blank"
               >Minha lista</a
             >
             <a class="btn" href="tela2_login.html" target="_blank">Entrar</a>
-            <a class="btn" href="tela3_cadastro.html" target="_blank"
+            <a class="btn" href="tela3.html" target="_blank"
               >Cadastrar</a
             >
 
@@ -66,7 +69,7 @@
             <div class="banner-text">
                 <h1>Conexão <br> Cultura</h1>
                 <p>Encontre tudo que precisa em um só site!</p>
-                <a href="tela3_cadastro.html" target="_blank" class="btn">Cadastre-se</a>
+                <a href="tela3.html" target="_blank" class="btn">Cadastre-se</a>
             </div>
     </section>
 
@@ -77,72 +80,59 @@
                 <h3>Pesquisa por gênero</h3>
                 <p> Segue a sessão conforme o gênero! Acesse as opções na lista.
                 </p>
-                <section class="depoimentos">
-                    <div class="container">
-                        <div class="cards">
-                            <!-- card Genero romance-->
-                            <div class="card-item">
-                                <p class="nome-user">Romance</p>
-                                    <div id="menu" class="menu" data-aberto="false">
-                                        <span id="menu-trigger" class="menu-trigger">
-                                            <i class="fa fa-plus"></i>
-                                            <i class="fa fa-minus"></i>
-                                        </span>
-                                        
-                                        <ul class="menu-menu">
-                                            <li><a href='tela5_pesquisa_filtrada.html'>Filmes </a></li>
-                                            <li><a href='tela5_pesquisa_filtrada.html'>Séries</a></li>
-                                            <li><a href='tela5_pesquisa_filtrada.html'>Livros</a></li>
-                                        </ul>
-                                    </div>
-                            </div>
-                            <!-- card Genero Ação-->
-                            <div class="card-item">
-                                <p class="nome-user">Ação</p>
-                                <div id="menu1" class="menu" data-aberto="false">
-                                    <span id="menu1-trigger" class="menu-trigger">
-                                        <i class="fa fa-plus"></i>
-                                        <i class="fa fa-minus"></i>
-                                    </span>
-                                    <ul class="menu-menu">
-                                        <li><a href='#'>Filmes</a></li>
-                                        <li><a href='#'>Séries</a></li>
-                                        <li><a href='#'>Livros</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <!-- card Genero Drama-->
-                            <div class="card-item">
-                                <p class="nome-user">Drama</p>
-                                <div id="menu2" class="menu" data-aberto="false">
-                                    <span id="menu2-trigger" class="menu-trigger">
-                                        <i class="fa fa-plus"></i>
-                                        <i class="fa fa-minus"></i>
-                                    </span>
-                                    <ul class="menu-menu">
-                                        <li><a href='#'>Filmes</a></li>
-                                        <li><a href='#'>Séries</a></li>
-                                        <li><a href='#'>Livros</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <!-- card Genero Ficção-->
-                            <div class="card-item">
-                                <p class="nome-user">Ficção</p>
-                                <div id="menu3" class="menu" data-aberto="false">
-                                    <span id="menu3-trigger" class="menu-trigger">
-                                        <i class="fa fa-plus"></i>
-                                        <i class="fa fa-minus"></i>
-                                    </span>
-                                    <ul class="menu-menu">
-                                        <li><a href='#'>Filmes</a></li>
-                                        <li><a href='#'>Séries</a></li>
-                                        <li><a href='#'>Livros</a></li>
-                                    </ul>
-                                </div>
-                            </div>
+                <section >
+                    <div class="dropdown">
+                        <div class="card-item">
+                        <button onclick="toggleDropdown()" class="dropbtn">
+                        Terror    
+                        </button>
+                        <div id="dropdownContent" class="dropdown-content">
+                        <a href="tela5_pesquisa_filtrada.html" onclick="selectGenre('Ficção')">Livros</a>
+                        <a href="tela5_pesquisa_filtrada.html" onclick="selectGenre('Não Ficção')">Filmes</a>
+                        <a href="tela5_pesquisa_filtrada.html" onclick="selectGenre('Romance')">Series</a>
+                
                         </div>
-                    </div>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="card-item">
+                        <button onclick="toggleDropdown()" class="dropbtn">
+                        Romance
+                        </button>
+                        <div id="dropdownContent" class="dropdown-content">
+                        <a href="tela5_pesquisa_filtrada.html" onclick="selectGenre('Ficção')">Livros</a>
+                        <a href="tela5_pesquisa_filtrada.html" onclick="selectGenre('Não Ficção')">Filmes</a>
+                        <a href="tela5_pesquisa_filtrada.html" onclick="selectGenre('Romance')">Series</a>
+                      
+                        </div>
+                         </div>
+                        <br>
+                        <br>
+                        <div class="card-item">
+                        <button onclick="toggleDropdown()" class="dropbtn">
+                        Ficção
+                        </button>
+                        <div id="dropdownContent" class="dropdown-content">
+                        <a href="tela5_pesquisa_filtrada.html" onclick="selectGenre('Ficção')">Livros</a>
+                        <a href="tela5_pesquisa_filtrada.html" onclick="selectGenre('Não Ficção')">Filmes</a>
+                        <a href="tela5_pesquisa_filtrada.html" onclick="selectGenre('Romance')">Series</a>
+                      
+                        </div>
+                         </div>
+                        <br>
+                        <br>
+                        <div class="card-item">
+                        <button onclick="toggleDropdown()" class="dropbtn">
+                        Drama
+                        </button>
+                        <div id="dropdownContent" class="dropdown-content">
+                        <a href="tela5_pesquisa_filtrada.html" onclick="selectGenre('Ficção')">Livros</a>
+                        <a href="tela5_pesquisa_filtrada.html" onclick="selectGenre('Não Ficção')">Filmes</a>
+                        <a href="tela5_pesquisa_filtrada.html" onclick="selectGenre('Romance')">Series</a>
+                        </div>
+                        </div>
+                    </div>     
+                            
                 </section>
             </div>
     </div>
@@ -185,13 +175,13 @@
                     <p class="nome-user">Filmes</p>
                     <button type="button-destaque" class="button-destaque"
                         onclick="window.location.href='tela6_descricao.html'">
-                        <img src="img/a-freira-poster-teaser.png" alt="filme">
+                        <img src="img/netflix1.jpg" alt="filme">
                     </button>
                     <br>
                     <br>
                     <button type="button-destaque" class="button-destaque"
                         onclick="window.location.href='https://www.netflix.com/watch/81616617?trackId=255824129&tctx=0%2C0%2Ca2ba17b8-065f-4943-9234-7f523de1d440-55179%2Ca2ba17b8-065f-4943-9234-7f523de1d440-55179%7C2%2Cunknown%2C%2C%2CtitlesResults%2C81616617%2CVideo%3A81616617%2CminiDpPlayButton'">
-                        <img src="./img/netflix1.jpg" alt="filme1">
+                        <img src="img/netflix.jpg" alt="filme1">
                     </button>
                     
                 </div>

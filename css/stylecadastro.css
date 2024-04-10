@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  body {
+    background-color: black;
+    color: rgb(171, 243, 189);
+  }
+  
+  nav {
+    width: 100%;
+    height: 10%;
+    border: 1px solid #1aaa1a; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000;
+  }
+  
+   nav .logo_ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+   nav .logo_ul img {
+    width: 90px;
+  }
+  
+   nav .logo_ul ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+  }
+  
+   nav .logo_ul ul li {
+    padding: 3px 15px;  
+  }
+  
+   nav .logo_ul ul li a {
+    text-decoration: none;
+    color: #1dd90c;
+    font-size: 12px;
+    font-weight: bold;
+    transition: .3s linear;
+  }
+  
+   nav .logo_ul ul li a:hover {
+  color: #1aaa1a;  
+  }
+  
+   nav .search_user {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+   nav .search_user input {
+    padding: 3px 10px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background:rgb(235, 239, 235);
+    color: rgb(36, 60, 33);
+    margin-right: 20px;
+  }
+  
+   nav .search_user input::placeholder {
+    color: rgb(4, 189, 4);
+  }
+  
+   nav .search_user img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+  }
+  
+   nav .search_user .search {
+   position: absolute;
+   width: 320px;
+   height: 250px;
+   /* border: 1px solid #1aaa1a; */
+   right: 0;
+   top: 60px;
+   z-index: 99999;
+   overflow-y: auto;   
+  }
+  
+   nav .search_user .search::-webkit-scrollbar {
+   width: 5px; 
+   background: #1aaa1a;
+   border-radius: 5px;
+   visibility: hidden;
+  }
+  
+   nav .search_user .search:hover::-webkit-scrollbar-thumb {
+    visibility: visible;
+  }
+  
+   nav .search_user .search:hover::-webkit-scrollbar {
+    visibility: visible;
+  }
+  
+   nav .search_user .search::-webkit-scrollbar-thumb {
+     width: 5px; 
+     background: #1dd90c;
+     border-radius: 5px;
+     visibility: hidden;
+   }
+  
+   nav .search_user .search .card {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    padding: 5px 0px;
+    text-decoration: none; 
+    /* display: none; */
+  }
+  
+   nav .search_user .search .card::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #181717;
+    backdrop-filter: blur(5px);
+    border-radius: 5px;
+    opacity: .5;
+    z-index: -15;
+  }
+  
+   nav .search_user .search .card img {
+    width: 28px;
+    height: 90%;
+    border-radius: 0;
+    margin-left: 8px;
+  }
+   nav .search_user .search .card .cont {
+    margin-left: 10px;
+    color: rgb(30, 221, 13);    
+  }
+  
+   nav .search_user .search .card .cont h3 {
+    font-size: 15px;
+    line-height: 25px;
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 250px;
+  }
+  
+   nav .search_user .search .card .cont p {
+    font-size: 10px;
+  }
+  
+   nav .search_user .search .card .cont span {
+   background: #1aaa1a;
+   color: #000;
+   padding: 0px 3px;
+   margin: 0px 5px 0px 10px;
+   font-weight: 500;
+  }
+  
+  form#cadastro {
+    display: flex;
+    flex-direction:column;
+    width: 400px;
+    background-color: rgb(7, 77, 7);
+    border-radius: 16px;
+    padding: 2.5rem 100px;
+    margin:auto
+    
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  label {
+    margin-bottom: .2rem;
+    position: relative;
+    
+  }
+  
+  label:not(:first-of-type){
+    margin-top: 1rem;
+  }
+  
+  input {
+    padding: .2rem .5rem;
+    border-radius: 10%;
+  }
+  
+  .helper-text {
+    display: none;
+    font-size: .8rem;
+    color: darkred;
+  }
+  
+  button {
+    width: 100px;
+    height: 40px;
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    align-self: center;
+  }
+  
+  /* ---------- Estilos dinâmicos ---------- */
+  .required-popup::after {
+    content: "*Campo obrigatório";
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #DFDFDF;
+    font-size: .65rem;
+    padding: .2rem .3rem;
+    width: auto;
+    display: block;
+    background-color: #202020;
+  }
+  
+  input.error {
+    border: solid 2px #992020;
+    background-color: #CCBBBB;
+    color: #662020;
+  }
+  
+  input.correct {
+    background-color: #BBCCBB;
+    border: solid 2px #206620;
+    color: #206620;
+  }
+  
+  .visible {
+    display: block;
+  }

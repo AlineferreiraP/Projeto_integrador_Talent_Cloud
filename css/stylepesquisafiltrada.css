@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+}
+body {
+  background-image: url(../assets/Fundo1.jpg);
+  background-position: top center;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-color: #000000;
+  color: beige;
+}
+
+
+nav {
+    width: 100%;
+    height: 10%;
+    border: 1px solid #1aaa1a; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000;
+  }
+  
+   nav .logo_ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+   nav .logo_ul img {
+    width: 90px;
+  }
+  
+   nav .logo_ul ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+  }
+  
+   nav .logo_ul ul li {
+    padding: 3px 15px;  
+  }
+  
+   nav .logo_ul ul li a {
+    text-decoration: none;
+    color: #1dd90c;
+    font-size: 12px;
+    font-weight: bold;
+    transition: .3s linear;
+  }
+  
+   nav .logo_ul ul li a:hover {
+  color: #1aaa1a;  
+  }
+  
+   nav .search_user {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+   nav .search_user input {
+    padding: 3px 10px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background:rgb(235, 239, 235);
+    color: rgb(36, 60, 33);
+    margin-right: 20px;
+  }
+  
+   nav .search_user input::placeholder {
+    color: rgb(4, 189, 4);
+  }
+  
+   nav .search_user img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+  }
+  
+   nav .search_user .search {
+   position: absolute;
+   width: 320px;
+   height: 250px;
+   /* border: 1px solid #1aaa1a; */
+   right: 0;
+   top: 60px;
+   z-index: 99999;
+   overflow-y: auto;   
+  }
+  
+   nav .search_user .search::-webkit-scrollbar {
+   width: 5px; 
+   background: #1aaa1a;
+   border-radius: 5px;
+   visibility: hidden;
+  }
+  
+   nav .search_user .search:hover::-webkit-scrollbar-thumb {
+    visibility: visible;
+  }
+  
+   nav .search_user .search:hover::-webkit-scrollbar {
+    visibility: visible;
+  }
+  
+   nav .search_user .search::-webkit-scrollbar-thumb {
+     width: 5px; 
+     background: #1dd90c;
+     border-radius: 5px;
+     visibility: hidden;
+   }
+  
+   nav .search_user .search .card {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    padding: 5px 0px;
+    text-decoration: none; 
+    /* display: none; */
+  }
+  
+   nav .search_user .search .card::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #181717;
+    backdrop-filter: blur(5px);
+    border-radius: 5px;
+    opacity: .5;
+    z-index: -15;
+  }
+  
+   nav .search_user .search .card img {
+    width: 28px;
+    height: 90%;
+    border-radius: 0;
+    margin-left: 8px;
+  }
+   nav .search_user .search .card .cont {
+    margin-left: 10px;
+    color: rgb(30, 221, 13);    
+  }
+  
+   nav .search_user .search .card .cont h3 {
+    font-size: 15px;
+    line-height: 25px;
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 250px;
+  }
+  
+   nav .search_user .search .card .cont p {
+    font-size: 10px;
+  }
+  
+   nav .search_user .search .card .cont span {
+   background: #1aaa1a;
+   color: #000;
+   padding: 0px 3px;
+   margin: 0px 5px 0px 10px;
+   font-weight: 500;
+  }
+
+  h2{
+    text-align:end;
+    font-size: 40px;
+    color: rgb(238, 241, 237);
+    margin: 10px;
+}
+  #freira {
+    width: 20rem;
+    border-radius: 8px;
+    transition: all 0.5s;
+    cursor: pointer;
+    border: solid rgb(48, 230, 48);
+   margin-top: 10px;
+    }
+    
+    .lista-itens{
+     text-align:center; 
+     width: 100px;
+     margin: 0 auto;
+    }
+
+    #titulo-cenas {
+      text-align: left;
+    }
+
+    h3{
+      font-size: 30px;
+  }
+    #freira:hover{
+        -webkit-transform: scale(0.5);
+        transform: scale(1.2);
+    }
+    
+
+.flex-container{
+    display: flex;
+     width: 800px;
+     margin: 0 auto;    
+}
+
+.flex-item2{
+  background-color: rgb(70, 223, 40);
+  padding: 1rem;
+  border-radius: 8px;
+  margin-left: 10px;
+  height: 25rem;
+  color: black;
+  margin-top: 95px;
+
+}
+
+h4{
+  font-size: x-large;
+  color: rgb(10, 10, 10);
+}
+.flex-item2 p {
+  color: black !important;
+  font-size: large;
+}
+
+/*AVALIAÇÃO */
+.estrelas input[type=radio] {
+    display: none;
+  }
+  .estrelas label i.fa:before {
+    content:'\f005';
+    color: rgb(252, 227, 7);
+  }
+  .estrelas input[type=radio]:checked ~ label i.fa:before {
+    color: #87ee7e;
+  }
+  .estrelas{
+    border-radius: 8px;
+    transition: all 1.5s;
+    cursor: pointer;
+  }
+  .estrelas :hover{
+    -webkit-transform: scale(2.5);
+    transform: scale(2.5);
+  }
+
+
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /*Cenas do filme */
+  .pic-ctn {
+    width: 100vw;
+    height: 200px;
+  }
+  
+  @keyframes display {
+    0% {
+      transform: translateX(50px);
+      opacity: 0;
+    }
+    10% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    20% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    30% {
+      transform: translateX(-200px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(-200px);
+      opacity: 0;
+    }
+  }
+  
+  .pic-ctn {
+    position: relative;
+    width: 100vw;
+    height: 300px;
+    margin-top: 15vh;
+    margin-bottom: 20px;
+  }
+  
+  .pic-ctn > img {
+    position: absolute;
+    top: 0;
+    left: calc(50% - 100px);
+    opacity: 0;
+    animation: display 15s infinite;
+    width: 350px;
+    height: 300px;
+
+  }
+  
+  img:nth-child(2) {
+    animation-delay: 4s;
+  }
+  img:nth-child(3) {
+    animation-delay: 8s;
+  }
+  img:nth-child(4) {
+    animation-delay: 16s;
+  }
+  img:nth-child(5) {
+    animation-delay: 20s;
+  }
